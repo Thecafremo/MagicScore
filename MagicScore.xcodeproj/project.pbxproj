@@ -10,7 +10,6 @@
 		41A76F7F202E258B00F093D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A76F7E202E258B00F093D4 /* AppDelegate.swift */; };
 		41A76F81202E258B00F093D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A76F80202E258B00F093D4 /* ViewController.swift */; };
 		41A76F84202E258B00F093D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A76F82202E258B00F093D4 /* Main.storyboard */; };
-		41A76F87202E258B00F093D4 /* MagicScore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41A76F85202E258B00F093D4 /* MagicScore.xcdatamodeld */; };
 		41A76F89202E258B00F093D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A76F88202E258B00F093D4 /* Assets.xcassets */; };
 		41A76F8C202E258B00F093D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A76F8A202E258B00F093D4 /* LaunchScreen.storyboard */; };
 		41A76F97202E258B00F093D4 /* MagicScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A76F96202E258B00F093D4 /* MagicScoreTests.swift */; };
@@ -31,7 +30,6 @@
 		41A76F7E202E258B00F093D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A76F80202E258B00F093D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		41A76F83202E258B00F093D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		41A76F86202E258B00F093D4 /* MagicScore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MagicScore.xcdatamodel; sourceTree = "<group>"; };
 		41A76F88202E258B00F093D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41A76F8B202E258B00F093D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41A76F8D202E258B00F093D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,13 +77,11 @@
 		41A76F7D202E258B00F093D4 /* MagicScore */ = {
 			isa = PBXGroup;
 			children = (
+				41A76F8A202E258B00F093D4 /* LaunchScreen.storyboard */,
 				41A76F7E202E258B00F093D4 /* AppDelegate.swift */,
 				41A76F80202E258B00F093D4 /* ViewController.swift */,
 				41A76F82202E258B00F093D4 /* Main.storyboard */,
-				41A76F88202E258B00F093D4 /* Assets.xcassets */,
-				41A76F8A202E258B00F093D4 /* LaunchScreen.storyboard */,
-				41A76F8D202E258B00F093D4 /* Info.plist */,
-				41A76F85202E258B00F093D4 /* MagicScore.xcdatamodeld */,
+				41A76FA1202E278100F093D4 /* Resources */,
 			);
 			path = MagicScore;
 			sourceTree = "<group>";
@@ -97,6 +93,15 @@
 				41A76F98202E258B00F093D4 /* Info.plist */,
 			);
 			path = MagicScoreTests;
+			sourceTree = "<group>";
+		};
+		41A76FA1202E278100F093D4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41A76F8D202E258B00F093D4 /* Info.plist */,
+				41A76F88202E258B00F093D4 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,7 +208,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A76F81202E258B00F093D4 /* ViewController.swift in Sources */,
-				41A76F87202E258B00F093D4 /* MagicScore.xcdatamodeld in Sources */,
 				41A76F7F202E258B00F093D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,19 +448,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		41A76F85202E258B00F093D4 /* MagicScore.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				41A76F86202E258B00F093D4 /* MagicScore.xcdatamodel */,
-			);
-			currentVersion = 41A76F86202E258B00F093D4 /* MagicScore.xcdatamodel */;
-			path = MagicScore.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 41A76F73202E258B00F093D4 /* Project object */;
 }
