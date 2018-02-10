@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41074231202F983D007A4B25 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41074230202F983D007A4B25 /* Defines.swift */; };
+		41074234202F9857007A4B25 /* RequestManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41074233202F9857007A4B25 /* RequestManageable.swift */; };
+		41074237202F986A007A4B25 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41074236202F986A007A4B25 /* RequestManager.swift */; };
 		41A76F7F202E258B00F093D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A76F7E202E258B00F093D4 /* AppDelegate.swift */; };
 		41A76F81202E258B00F093D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A76F80202E258B00F093D4 /* ViewController.swift */; };
 		41A76F84202E258B00F093D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A76F82202E258B00F093D4 /* Main.storyboard */; };
@@ -29,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		12B01E1F3F027A7E8F3B8D06 /* Pods_MagicScore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicScore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41074230202F983D007A4B25 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
+		41074233202F9857007A4B25 /* RequestManageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManageable.swift; sourceTree = "<group>"; };
+		41074236202F986A007A4B25 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		41A76F7B202E258B00F093D4 /* MagicScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A76F7E202E258B00F093D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A76F80202E258B00F093D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +72,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4107422E202F97FC007A4B25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4107422F202F9812007A4B25 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				41074235202F9860007A4B25 /* Managers */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		41074232202F984C007A4B25 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				41074233202F9857007A4B25 /* RequestManageable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		41074235202F9860007A4B25 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				41074236202F986A007A4B25 /* RequestManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		41A76F72202E258B00F093D4 = {
 			isa = PBXGroup;
 			children = (
@@ -89,7 +126,9 @@
 		41A76F7D202E258B00F093D4 /* MagicScore */ = {
 			isa = PBXGroup;
 			children = (
-				41A76F8A202E258B00F093D4 /* LaunchScreen.storyboard */,
+				41074232202F984C007A4B25 /* Protocols */,
+				4107422F202F9812007A4B25 /* Objects */,
+				4107422E202F97FC007A4B25 /* Model */,
 				41A76F7E202E258B00F093D4 /* AppDelegate.swift */,
 				41A76F80202E258B00F093D4 /* ViewController.swift */,
 				41A76F82202E258B00F093D4 /* Main.storyboard */,
@@ -110,7 +149,9 @@
 		41A76FA1202E278100F093D4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				41074230202F983D007A4B25 /* Defines.swift */,
 				41A76F8D202E258B00F093D4 /* Info.plist */,
+				41A76F8A202E258B00F093D4 /* LaunchScreen.storyboard */,
 				41A76F88202E258B00F093D4 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -338,8 +379,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41074237202F986A007A4B25 /* RequestManager.swift in Sources */,
+				41074234202F9857007A4B25 /* RequestManageable.swift in Sources */,
 				41A76F81202E258B00F093D4 /* ViewController.swift in Sources */,
 				41A76F7F202E258B00F093D4 /* AppDelegate.swift in Sources */,
+				41074231202F983D007A4B25 /* Defines.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,7 +538,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MagicScore/Info.plist;
+				INFOPLIST_FILE = MagicScore/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.magicdealers.MagicScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,7 +553,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MagicScore/Info.plist;
+				INFOPLIST_FILE = MagicScore/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.magicdealers.MagicScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
