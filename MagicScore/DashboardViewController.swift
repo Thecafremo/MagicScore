@@ -20,10 +20,18 @@ class DashboardViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        self.configureNavigationBar()
+        self.retrieveCreditScore()
     }
     
     
     //MARK: - Methods.
+    
+    private func configureNavigationBar() {
+        self.title = NSLocalizedString("Dashboard", comment: "")
+    }
+    
     
     private func retrieveCreditScore() {
         

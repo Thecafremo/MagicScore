@@ -17,6 +17,7 @@
 		410742442030752C007A4B25 /* CreditScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410742432030752C007A4B25 /* CreditScoreView.swift */; };
 		41074246203075AB007A4B25 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41074245203075AB007A4B25 /* NibLoadable.swift */; };
 		4107424820307730007A4B25 /* CreditScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4107424720307730007A4B25 /* CreditScoreView.xib */; };
+		4107424B20309116007A4B25 /* StylingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4107424A20309116007A4B25 /* StylingManager.swift */; };
 		41A76F7F202E258B00F093D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A76F7E202E258B00F093D4 /* AppDelegate.swift */; };
 		41A76F81202E258B00F093D4 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A76F80202E258B00F093D4 /* DashboardViewController.swift */; };
 		41A76F84202E258B00F093D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A76F82202E258B00F093D4 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		410742432030752C007A4B25 /* CreditScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreView.swift; sourceTree = "<group>"; };
 		41074245203075AB007A4B25 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		4107424720307730007A4B25 /* CreditScoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditScoreView.xib; sourceTree = "<group>"; };
+		4107424A20309116007A4B25 /* StylingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylingManager.swift; sourceTree = "<group>"; };
 		41A76F7B202E258B00F093D4 /* MagicScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A76F7E202E258B00F093D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A76F80202E258B00F093D4 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				41074236202F986A007A4B25 /* RequestManager.swift */,
+				4107424A20309116007A4B25 /* StylingManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				41074246203075AB007A4B25 /* NibLoadable.swift in Sources */,
 				41074234202F9857007A4B25 /* RequestManageable.swift in Sources */,
 				41A76F81202E258B00F093D4 /* DashboardViewController.swift in Sources */,
+				4107424B20309116007A4B25 /* StylingManager.swift in Sources */,
 				41A76F7F202E258B00F093D4 /* AppDelegate.swift in Sources */,
 				410742442030752C007A4B25 /* CreditScoreView.swift in Sources */,
 				41074231202F983D007A4B25 /* Defines.swift in Sources */,
@@ -603,7 +607,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.magicdealers.MagicScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -618,7 +622,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.magicdealers.MagicScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
