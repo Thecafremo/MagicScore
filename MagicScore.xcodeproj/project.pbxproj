@@ -13,6 +13,7 @@
 		41074239202FA4CB007A4B25 /* CreditReportInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41074238202FA4CB007A4B25 /* CreditReportInfo.swift */; };
 		4107423B202FA733007A4B25 /* CreditAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4107423A202FA733007A4B25 /* CreditAPI.swift */; };
 		4107423D202FBFEE007A4B25 /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4107423C202FBFEE007A4B25 /* Credit.swift */; };
+		41074242202FC396007A4B25 /* CountingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41074241202FC396007A4B25 /* CountingLabel.swift */; };
 		41A76F7F202E258B00F093D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A76F7E202E258B00F093D4 /* AppDelegate.swift */; };
 		41A76F81202E258B00F093D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A76F80202E258B00F093D4 /* ViewController.swift */; };
 		41A76F84202E258B00F093D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A76F82202E258B00F093D4 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		41074238202FA4CB007A4B25 /* CreditReportInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportInfo.swift; sourceTree = "<group>"; };
 		4107423A202FA733007A4B25 /* CreditAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditAPI.swift; sourceTree = "<group>"; };
 		4107423C202FBFEE007A4B25 /* Credit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credit.swift; sourceTree = "<group>"; };
+		41074241202FC396007A4B25 /* CountingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingLabel.swift; sourceTree = "<group>"; };
 		41A76F7B202E258B00F093D4 /* MagicScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A76F7E202E258B00F093D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A76F80202E258B00F093D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,22 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		4107423F202FC2FE007A4B25 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41074240202FC38D007A4B25 /* Labels */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41074240202FC38D007A4B25 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				41074241202FC396007A4B25 /* CountingLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
 		41A76F72202E258B00F093D4 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +165,7 @@
 				41074232202F984C007A4B25 /* Protocols */,
 				4107422F202F9812007A4B25 /* Objects */,
 				4107422E202F97FC007A4B25 /* Model */,
+				4107423F202FC2FE007A4B25 /* View */,
 				41A76F80202E258B00F093D4 /* ViewController.swift */,
 				41A76F82202E258B00F093D4 /* Main.storyboard */,
 				41A76FA1202E278100F093D4 /* Resources */,
@@ -400,6 +419,7 @@
 				41074237202F986A007A4B25 /* RequestManager.swift in Sources */,
 				4107423D202FBFEE007A4B25 /* Credit.swift in Sources */,
 				4107423B202FA733007A4B25 /* CreditAPI.swift in Sources */,
+				41074242202FC396007A4B25 /* CountingLabel.swift in Sources */,
 				41074234202F9857007A4B25 /* RequestManageable.swift in Sources */,
 				41A76F81202E258B00F093D4 /* ViewController.swift in Sources */,
 				41A76F7F202E258B00F093D4 /* AppDelegate.swift in Sources */,

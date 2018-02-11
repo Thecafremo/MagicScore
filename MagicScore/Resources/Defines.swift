@@ -15,3 +15,5 @@ typealias ThrowingResponseCompletionClosure = (_ throwingReturnClosure: Throwing
 
 typealias ThrowingClosure  = (() throws -> Void)
 typealias ThrowingCompletionClosure = (_ throwingClosure: ThrowingClosure) -> Void
+
+typealias ActionClosure = () -> Void
