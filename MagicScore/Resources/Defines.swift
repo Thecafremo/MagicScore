@@ -11,7 +11,7 @@ import Foundation
 //MARK: - Closures.
 
 typealias ThrowingReturnClosure = (() throws -> Any?)
-typealias ThrowingResponseCompletionClosure = (ThrowingReturnClosure) -> Void
+typealias ThrowingResponseCompletionClosure = (_ throwingReturnClosure: ThrowingReturnClosure) -> Void
 
 typealias ThrowingClosure  = (() throws -> Void)
-typealias ThrowingCompletionClosure = (ThrowingClosure) -> Void
+typealias ThrowingCompletionClosure = (_ throwingClosure: ThrowingClosure) -> Void

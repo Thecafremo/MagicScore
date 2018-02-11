@@ -17,15 +17,15 @@ class RequestManager: RequestManageable {
     
     class func performRequest(to urlString: String, withMethod method: HTTPMethod, parameters parametersDictionary: [String: Any]?, throwingResponseCompletionClosure: @escaping ThrowingResponseCompletionClosure) {
         
-        Alamofire.request(urlString, method: method, parameters: parametersDictionary).responseJSON { (dataResponse: DataResponse<Any>) in
+        Alamofire.request(urlString, method: method, parameters: parametersDictionary).responseData { (dataResponse: DataResponse<Data>) in
             
-            throwingResponseCompletionClosure({ () -> AnyHashable? in
+            throwingResponseCompletionClosure({ () -> Any? in
                 
                 if let error = dataResponse.error {
                     throw error
                 }
                 
-                return dataResponse.value as? AnyHashable
+                return dataResponse.value
             })
         }
     }
