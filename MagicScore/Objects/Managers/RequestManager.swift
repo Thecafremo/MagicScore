@@ -15,11 +15,11 @@ class RequestManager: RequestManageable {
     
     //MARK: - Class methods.
     
-    class func performRequest(to urlString: String, withMethod method: HTTPMethod, parameters parametersDictionary: [String: Any]?, throwingResponseCompletionClosure: @escaping ThrowingResponseCompletionClosure) {
+    class func performRequest(to urlString: String, withMethod method: HTTPMethod, parameters parametersDictionary: [String: Any]?, throwingResponseCompletionClosure: @escaping ThrowingResponseCompletionClosure<Data>) {
         
         Alamofire.request(urlString, method: method, parameters: parametersDictionary).responseData { (dataResponse: DataResponse<Data>) in
             
-            throwingResponseCompletionClosure({ () -> Any? in
+            throwingResponseCompletionClosure({ () -> Data? in
                 
                 if let error = dataResponse.error {
                     throw error

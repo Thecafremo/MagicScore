@@ -57,7 +57,7 @@ class CountingLabel: UILabel {
         self.actionClosure = actionClosure
 
         let displayLink = CADisplayLink.init(target: self, selector: #selector(self.update(for:)))
-        displayLink.preferredFramesPerSecond = 2
+        displayLink.frameInterval = 2
         
         displayLink.add(to: RunLoop.main, forMode: RunLoopMode.defaultRunLoopMode)
         displayLink.add(to: RunLoop.main, forMode: RunLoopMode.UITrackingRunLoopMode)

@@ -24,6 +24,7 @@
 		41A76F89202E258B00F093D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A76F88202E258B00F093D4 /* Assets.xcassets */; };
 		41A76F8C202E258B00F093D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A76F8A202E258B00F093D4 /* LaunchScreen.storyboard */; };
 		41A76F97202E258B00F093D4 /* MagicScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A76F96202E258B00F093D4 /* MagicScoreTests.swift */; };
+		41EF51F52030FDB40083F6CD /* Populatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EF51F42030FDB40083F6CD /* Populatable.swift */; };
 		6098496DF9E0E49AFB0C1E6D /* Pods_MagicScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B01E1F3F027A7E8F3B8D06 /* Pods_MagicScore.framework */; };
 		780F3229B98DA9B6A6C0B6E4 /* Pods_MagicScoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD25E2BCC2C42F9005EE2F1E /* Pods_MagicScoreTests.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		41A76F92202E258B00F093D4 /* MagicScoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicScoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A76F96202E258B00F093D4 /* MagicScoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicScoreTests.swift; sourceTree = "<group>"; };
 		41A76F98202E258B00F093D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41EF51F42030FDB40083F6CD /* Populatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Populatable.swift; sourceTree = "<group>"; };
 		54CDA5478479CE22D6818E3A /* Pods-MagicScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicScore.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicScore/Pods-MagicScore.release.xcconfig"; sourceTree = "<group>"; };
 		7E38E2B0960312A38F3546B8 /* Pods-MagicScoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicScoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicScoreTests/Pods-MagicScoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F73D613FDAA127001EEA12B /* Pods-MagicScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicScore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicScore/Pods-MagicScore.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		410552FE20312CBB00B0B1AF /* Journeys */ = {
+			isa = PBXGroup;
+			children = (
+				41A76F82202E258B00F093D4 /* Main.storyboard */,
+				41A76F80202E258B00F093D4 /* DashboardViewController.swift */,
+			);
+			path = Journeys;
+			sourceTree = "<group>";
+		};
 		4107422E202F97FC007A4B25 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +120,9 @@
 		41074232202F984C007A4B25 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				41074233202F9857007A4B25 /* RequestManageable.swift */,
 				41074245203075AB007A4B25 /* NibLoadable.swift */,
+				41EF51F42030FDB40083F6CD /* Populatable.swift */,
+				41074233202F9857007A4B25 /* RequestManageable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -186,8 +198,7 @@
 				4107422F202F9812007A4B25 /* Objects */,
 				4107422E202F97FC007A4B25 /* Model */,
 				4107423F202FC2FE007A4B25 /* View */,
-				41A76F82202E258B00F093D4 /* Main.storyboard */,
-				41A76F80202E258B00F093D4 /* DashboardViewController.swift */,
+				410552FE20312CBB00B0B1AF /* Journeys */,
 				41A76FA1202E278100F093D4 /* Resources */,
 			);
 			path = MagicScore;
@@ -441,6 +452,7 @@
 				4107423D202FBFEE007A4B25 /* Credit.swift in Sources */,
 				4107423B202FA733007A4B25 /* CreditAPI.swift in Sources */,
 				41074242202FC396007A4B25 /* CountingLabel.swift in Sources */,
+				41EF51F52030FDB40083F6CD /* Populatable.swift in Sources */,
 				41074246203075AB007A4B25 /* NibLoadable.swift in Sources */,
 				41074234202F9857007A4B25 /* RequestManageable.swift in Sources */,
 				41A76F81202E258B00F093D4 /* DashboardViewController.swift in Sources */,

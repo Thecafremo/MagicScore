@@ -14,9 +14,19 @@ class DashboardViewController: UIViewController {
     
     @IBOutlet private weak var creditScoreView: CreditScoreView!
     
+    private var credit: Credit? {
+        
+        didSet {
+            
+            if let credit = self.credit {
+                self.creditScoreView.populate(with: credit.creditReportInfo)
+            }
+        }
+    }
+    
     
     //MARK: - LifeCycle's.
-
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -35,9 +45,15 @@ class DashboardViewController: UIViewController {
     
     private func retrieveCreditScore() {
         
-        
+        CreditAPI.retrieve { (throwingReturnClosure: ThrowingReturnClosure<Credit>) in
+            
+            do {
+                self.credit = try throwingReturnClosure()
+                
+            } catch {
+                print(error)
+            }
+        }
     }
-
-
 }
 
