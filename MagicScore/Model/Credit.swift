@@ -12,5 +12,5 @@ class Credit: Decodable {
     
     //MARK: - Properties.
     
-    var creditReportInfo: CreditReportInfo
+    var creditReportInfo: CreditReportInfo?
 }

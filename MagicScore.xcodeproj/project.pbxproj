@@ -18,12 +18,14 @@
 		41074246203075AB007A4B25 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41074245203075AB007A4B25 /* NibLoadable.swift */; };
 		4107424820307730007A4B25 /* CreditScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4107424720307730007A4B25 /* CreditScoreView.xib */; };
 		4107424B20309116007A4B25 /* StylingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4107424A20309116007A4B25 /* StylingManager.swift */; };
+		4152FF7620331EA3008A73EE /* MockRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152FF7520331EA3008A73EE /* MockRequestManager.swift */; };
+		4152FF7920332623008A73EE /* CreditAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152FF7820332623008A73EE /* CreditAPITests.swift */; };
+		4152FF7C20332984008A73EE /* Credit.json in Resources */ = {isa = PBXBuildFile; fileRef = 4152FF7B20332984008A73EE /* Credit.json */; };
 		41A76F7F202E258B00F093D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A76F7E202E258B00F093D4 /* AppDelegate.swift */; };
 		41A76F81202E258B00F093D4 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A76F80202E258B00F093D4 /* DashboardViewController.swift */; };
 		41A76F84202E258B00F093D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A76F82202E258B00F093D4 /* Main.storyboard */; };
 		41A76F89202E258B00F093D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A76F88202E258B00F093D4 /* Assets.xcassets */; };
 		41A76F8C202E258B00F093D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A76F8A202E258B00F093D4 /* LaunchScreen.storyboard */; };
-		41A76F97202E258B00F093D4 /* MagicScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A76F96202E258B00F093D4 /* MagicScoreTests.swift */; };
 		41EF51F52030FDB40083F6CD /* Populatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EF51F42030FDB40083F6CD /* Populatable.swift */; };
 		6098496DF9E0E49AFB0C1E6D /* Pods_MagicScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B01E1F3F027A7E8F3B8D06 /* Pods_MagicScore.framework */; };
 		780F3229B98DA9B6A6C0B6E4 /* Pods_MagicScoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD25E2BCC2C42F9005EE2F1E /* Pods_MagicScoreTests.framework */; };
@@ -52,6 +54,9 @@
 		41074245203075AB007A4B25 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		4107424720307730007A4B25 /* CreditScoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditScoreView.xib; sourceTree = "<group>"; };
 		4107424A20309116007A4B25 /* StylingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylingManager.swift; sourceTree = "<group>"; };
+		4152FF7520331EA3008A73EE /* MockRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequestManager.swift; sourceTree = "<group>"; };
+		4152FF7820332623008A73EE /* CreditAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditAPITests.swift; sourceTree = "<group>"; };
+		4152FF7B20332984008A73EE /* Credit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Credit.json; sourceTree = "<group>"; };
 		41A76F7B202E258B00F093D4 /* MagicScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A76F7E202E258B00F093D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A76F80202E258B00F093D4 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +65,6 @@
 		41A76F8B202E258B00F093D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41A76F8D202E258B00F093D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41A76F92202E258B00F093D4 /* MagicScoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicScoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		41A76F96202E258B00F093D4 /* MagicScoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicScoreTests.swift; sourceTree = "<group>"; };
 		41A76F98202E258B00F093D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41EF51F42030FDB40083F6CD /* Populatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Populatable.swift; sourceTree = "<group>"; };
 		54CDA5478479CE22D6818E3A /* Pods-MagicScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicScore.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicScore/Pods-MagicScore.release.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +174,31 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		4152FF7420331E83008A73EE /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4152FF7520331EA3008A73EE /* MockRequestManager.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4152FF772033223A008A73EE /* APITests */ = {
+			isa = PBXGroup;
+			children = (
+				4152FF7820332623008A73EE /* CreditAPITests.swift */,
+			);
+			path = APITests;
+			sourceTree = "<group>";
+		};
+		4152FF7A20332931008A73EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4152FF7B20332984008A73EE /* Credit.json */,
+				41A76F98202E258B00F093D4 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		41A76F72202E258B00F093D4 = {
 			isa = PBXGroup;
 			children = (
@@ -207,8 +236,9 @@
 		41A76F95202E258B00F093D4 /* MagicScoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				41A76F96202E258B00F093D4 /* MagicScoreTests.swift */,
-				41A76F98202E258B00F093D4 /* Info.plist */,
+				4152FF7420331E83008A73EE /* Mocks */,
+				4152FF772033223A008A73EE /* APITests */,
+				4152FF7A20332931008A73EE /* Resources */,
 			);
 			path = MagicScoreTests;
 			sourceTree = "<group>";
@@ -344,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4152FF7C20332984008A73EE /* Credit.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,7 +498,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41A76F97202E258B00F093D4 /* MagicScoreTests.swift in Sources */,
+				4152FF7620331EA3008A73EE /* MockRequestManager.swift in Sources */,
+				4152FF7920332623008A73EE /* CreditAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,7 +677,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MagicScoreTests/Info.plist;
+				INFOPLIST_FILE = MagicScoreTests/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.magicdealers.MagicScoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -662,7 +694,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MagicScoreTests/Info.plist;
+				INFOPLIST_FILE = MagicScoreTests/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.magicdealers.MagicScoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
