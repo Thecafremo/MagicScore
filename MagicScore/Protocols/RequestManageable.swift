@@ -10,14 +10,14 @@ import Alamofire
 import Foundation
 
 protocol RequestManageable {
-    static func performRequest(to urlString: String, withMethod method: HTTPMethod, parameters parametersDictionary: [String: Any]?, throwingResponseCompletionClosure: @escaping ThrowingResponseCompletionClosure<Data>)
+    func performRequest(to urlString: String, withMethod method: HTTPMethod, parameters parametersDictionary: [String: Any]?, throwingResponseCompletionClosure: @escaping ThrowingResponseCompletionClosure<Data>)
 }
 
 extension RequestManageable {
     
     //JP: To add default paratemers to the protocol.
     
-    static func performRequest(to urlString: String, withMethod method: HTTPMethod = .get, parameters parametersDictionary: [String: Any]? = nil, throwingResponseCompletionClosure: @escaping ThrowingResponseCompletionClosure<Data>) {
+    func performRequest(to urlString: String, withMethod method: HTTPMethod = .get, parameters parametersDictionary: [String: Any]? = nil, throwingResponseCompletionClosure: @escaping ThrowingResponseCompletionClosure<Data>) {
         self.performRequest(to: urlString, withMethod: method, parameters: parametersDictionary, throwingResponseCompletionClosure: throwingResponseCompletionClosure)
     }
 }

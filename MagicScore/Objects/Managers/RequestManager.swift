@@ -13,9 +13,9 @@ let baseURL = "https://5lfoiyb0b3.execute-api.us-west-2.amazonaws.com/prod/"
 
 class RequestManager: RequestManageable {
     
-    //MARK: - Class methods.
+    //MARK: - Methods.
     
-    class func performRequest(to urlString: String, withMethod method: HTTPMethod, parameters parametersDictionary: [String: Any]?, throwingResponseCompletionClosure: @escaping ThrowingResponseCompletionClosure<Data>) {
+    func performRequest(to urlString: String, withMethod method: HTTPMethod, parameters parametersDictionary: [String: Any]?, throwingResponseCompletionClosure: @escaping ThrowingResponseCompletionClosure<Data>) {
         
         Alamofire.request(urlString, method: method, parameters: parametersDictionary).responseData { (dataResponse: DataResponse<Data>) in
             

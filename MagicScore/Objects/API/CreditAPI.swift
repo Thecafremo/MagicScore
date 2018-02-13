@@ -12,7 +12,7 @@ class CreditAPI {
     
     //MARK: - Class Methods.
     
-    class func retrieve(through requestManager: RequestManageable.Type = RequestManager.self, throwingResponseCompletionClosure: @escaping ThrowingResponseCompletionClosure<Credit>) {
+    class func retrieve(through requestManager: RequestManageable = RequestManager(), throwingResponseCompletionClosure: @escaping ThrowingResponseCompletionClosure<Credit>) {
         
         requestManager.performRequest(to: baseURL + "mockcredit/values", withMethod: .get, parameters: nil) { (responseThrowingReturnClosure: ThrowingReturnClosure<Data>) in
             
