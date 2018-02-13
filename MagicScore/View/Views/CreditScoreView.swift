@@ -27,6 +27,7 @@ class CreditScoreView: UIView, NibLoadable, Populatable {
     
     private var overlineShapeLayer: CAShapeLayer!
     private var progressShapeLayer: CAShapeLayer!
+    private var gradientLayer: CAGradientLayer!
     
     private var progressPercentage: CGFloat = 0 {
         
@@ -60,6 +61,8 @@ class CreditScoreView: UIView, NibLoadable, Populatable {
         
         self.overlineShapeLayer.path = self.path(for: 100, lineWidth: overlineLineWidth)
         self.progressShapeLayer.path = self.path(for: self.progressPercentage, lineWidth: progressLineWidth, radiusMargin: progressShapeRadiusMargin)
+        
+        self.gradientLayer.frame = self.bounds
     }
     
     
@@ -72,6 +75,15 @@ class CreditScoreView: UIView, NibLoadable, Populatable {
         
         self.progressShapeLayer = CAShapeLayer.init(withStrokeColor: UIColor.orange.cgColor, lineWidth: progressLineWidth)
         self.layer.addSublayer(self.progressShapeLayer)
+        
+        self.gradientLayer = CAGradientLayer()
+        self.gradientLayer.colors = [UIColor.red.cgColor,
+                                     UIColor.orange.cgColor,
+                                     UIColor.yellow.cgColor]
+        self.gradientLayer.startPoint = CGPoint(x: 0, y: 1)
+        self.gradientLayer.endPoint = CGPoint(x: 1, y: 0)
+        self.gradientLayer.mask = self.progressShapeLayer
+        self.layer.addSublayer(self.gradientLayer)
     }
     
     
