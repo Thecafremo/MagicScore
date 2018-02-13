@@ -18,8 +18,8 @@ class DashboardViewController: UIViewController {
         
         didSet {
             
-            if let credit = self.credit {
-                self.creditScoreView.populate(with: credit.creditReportInfo)
+            if let credit = self.credit, let creditReportInfo = credit.creditReportInfo {
+                self.creditScoreView.populate(with: creditReportInfo)
             }
         }
     }

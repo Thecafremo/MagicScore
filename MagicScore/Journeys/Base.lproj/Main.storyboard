@@ -19,9 +19,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchImage" translatesAutoresizingMaskIntoConstraints="NO" id="Uq0-BH-1s3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tty-M0-YIV" customClass="CreditScoreView" customModule="MagicScore" customModuleProvider="target">
                                 <rect key="frame" x="30" y="176" width="315" height="315"/>
-                                <color key="backgroundColor" red="0.99801748990000005" green="0.74344044919999996" blue="0.49102580550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="tty-M0-YIV" secondAttribute="height" multiplier="1:1" id="bZW-sm-abY"/>
                                 </constraints>
@@ -30,9 +33,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tty-M0-YIV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1la-Pp-Mkz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Uq0-BH-1s3" secondAttribute="bottom" id="289-2J-SeG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tty-M0-YIV" secondAttribute="trailing" constant="30" id="6sM-uY-Oey"/>
+                            <constraint firstAttribute="trailing" secondItem="Uq0-BH-1s3" secondAttribute="trailing" id="DPz-er-OZn"/>
+                            <constraint firstItem="Uq0-BH-1s3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="L4v-Dx-dtn"/>
                             <constraint firstItem="tty-M0-YIV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qUV-b4-0Pn"/>
                             <constraint firstItem="tty-M0-YIV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="uCB-YC-KEJ"/>
+                            <constraint firstItem="Uq0-BH-1s3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uV4-5f-IQZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -43,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="73" y="134"/>
+            <point key="canvasLocation" x="72.799999999999997" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eIl-Ox-4f9">
@@ -62,4 +69,7 @@
             <point key="canvasLocation" x="-687" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launchImage" width="633" height="952"/>
+    </resources>
 </document>

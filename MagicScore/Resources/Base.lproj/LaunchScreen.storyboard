@@ -18,16 +18,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vV5-XW-pNq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchImage" translatesAutoresizingMaskIntoConstraints="NO" id="vV5-XW-pNq">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MagicScore" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="li4-Bc-heO">
+                                <rect key="frame" x="104" y="161.5" width="167" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your fake credit score." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mw6-GA-0SL">
+                                <rect key="frame" x="94" y="217.5" width="187" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For free, forever." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3C-8D-Nm5">
+                                <rect key="frame" x="113" y="241.5" width="149" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.87241002369999998" green="0.5652286742" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vV5-XW-pNq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0E4-uX-0Td"/>
+                            <constraint firstItem="Mw6-GA-0SL" firstAttribute="top" secondItem="li4-Bc-heO" secondAttribute="bottom" constant="20" id="5Os-3M-acm"/>
+                            <constraint firstItem="q3C-8D-Nm5" firstAttribute="top" secondItem="Mw6-GA-0SL" secondAttribute="bottom" id="8v6-45-Gem"/>
                             <constraint firstItem="vV5-XW-pNq" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="KK1-aU-Q1o"/>
                             <constraint firstItem="vV5-XW-pNq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KhZ-GU-rgO"/>
+                            <constraint firstItem="q3C-8D-Nm5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Mde-3B-NQN"/>
+                            <constraint firstItem="li4-Bc-heO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="VAY-KL-3Kh"/>
+                            <constraint firstAttribute="centerY" secondItem="q3C-8D-Nm5" secondAttribute="centerY" constant="80" id="Vkk-Sf-hqK"/>
                             <constraint firstItem="vV5-XW-pNq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="X7Y-eX-vnC"/>
+                            <constraint firstItem="Mw6-GA-0SL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uyh-kr-fof"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -37,4 +61,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launchImage" width="633" height="952"/>
+    </resources>
 </document>
