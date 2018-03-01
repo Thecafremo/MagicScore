@@ -17,7 +17,7 @@ class CountingLabel: UILabel {
     private var endValue: Float!
     
     private var totalDuration: Double!
-    private var progressDuration: Double! = 0
+    private var progressDuration: Double = 0
     private var lastUpdateTimeInterval: Double!
     
     private var actionClosure: ActionClosure?

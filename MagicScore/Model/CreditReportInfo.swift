@@ -8,14 +8,14 @@
 
 import Foundation
 
-class CreditReportInfo: Decodable {
+struct CreditReportInfo: Decodable {
     
     //MARK: - Properties.
     
-    var score: Int!
-    var scoreBand: Int!
-    var clientRef: String!
+    var score: Int?
+    var scoreBand: Int?
+    var clientRef: String?
     
-    var maxScoreValue: Int!
-    var minScoreValue: Int!
+    var maxScoreValue: Int?
+    var minScoreValue: Int?
 }

@@ -109,11 +109,14 @@ class CreditScoreView: UIView, NibLoadable, Populatable {
 
     func populate(with creditReportInfo: CreditReportInfo) {
         
-        self.progressPercentage = CGFloat((creditReportInfo.score * 100) / creditReportInfo.maxScoreValue)
+        guard let maxScoreValue = creditReportInfo.maxScoreValue, let score = creditReportInfo.score else {
+            return
+        }
         
-        self.creditScoreCountingLabel.count(from: 0, to: Float(creditReportInfo.score), withDuration: animationDuration)
-        self.outOfLabel.text = NSLocalizedString("out of ", comment: "") + String(creditReportInfo.maxScoreValue)
+        self.progressPercentage = CGFloat((score * 100) / maxScoreValue)
 
+        self.creditScoreCountingLabel.count(from: 0, to: Float(score), withDuration: animationDuration)
+        self.outOfLabel.text = NSLocalizedString("out of ", comment: "") + String(maxScoreValue)
     }
     
     //MARK: - Helpers.

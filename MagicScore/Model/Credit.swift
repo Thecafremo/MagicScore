@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Credit: Decodable {
+struct Credit: Decodable {
     
     //MARK: - Properties.
     
